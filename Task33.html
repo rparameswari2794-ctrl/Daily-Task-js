@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Task1
+        let e = -5;
+console.log(e > 0 ? "Positive" : e < 0 ? "Negative" : "Zero");
+
+// Task2
+let a = 4;
+console.log(a % 2 === 0 ? "Even" : "Odd");
+
+// Task3
+let age = 20;
+console.log(age >= 18 ? "Eligible to vote" : "Not eligible");
+
+// Task4
+let p = 10, q = 20;
+console.log(p> q ? p : q);
+
+// Task5
+let year = 2024;
+console.log((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0 ? "Leap Year" : "Not Leap");
+
+// Task6
+let username = "admin1";
+console.log(username.length >= 5 ? "Valid" : "Too short");
+
+// Task7
+let ch = "a";
+console.log("aeiou".includes(ch.toLowerCase()) ? "Vowel" : "Consonant");
+
+// Task8
+let marks = 85;
+console.log(marks >= 90 ? "A" : marks >= 75 ? "B" : marks >= 50 ? "C" : "Fail");
+
+// Task9
+let n = 15;
+console.log(n % 3 === 0 && n % 5 === 0);
+
+// Task10
+let hour = 14;
+console.log(hour < 12 ? "AM" : "PM");
+
+// Task11
+for(let i=1;i<=10;i++) console.log(i);
+
+// Task12
+for(let v=2;v<=50;v+=2) console.log(v);
+
+// Task13
+let w=5,sum=0;
+for(let i=1;i<=w;i++) sum+=i;
+console.log(sum);
+
+// Task14
+let o=5;
+for(let i=1;i<=10;i++) console.log(`${o} x ${i} = ${o*i}`);
+
+// Task15
+let f=123, rev=0;
+while(f>0){ rev=rev*10+f%10; n=Math.floor(f/10); }
+console.log(rev);
+
+// Task16
+let s=12345;
+console.log(s.toString().length);
+
+// Task17
+let arr=[1,2,3];
+for(let x of arr) console.log(x);
+
+
+// Task18
+let m=5,d=1;
+for(let i=1;i<=m;i++) d*=i;
+console.log(d);
+
+// Task19
+let g=0,h=1;
+for(let i=1;i<=5;i++){ console.log(g); [g,h]=[h,g+h]; }
+
+
+// Task20
+let array=[5,2,9];
+console.log(Math.max(...array));
+
+// Task21
+let y="Hello";
+console.log(y.length);
+
+// Task22
+console.log("hello".toUpperCase());
+
+// Task23
+console.log("I love JavaScript".includes("JavaScript"));
+
+// Task24
+console.log("hello".split("").reverse().join(""));
+
+
+// Task25
+let l="hello",count=0;
+for(let c of l) if("aeiou".includes(c)) count++;
+console.log(count);
+
+
+// Task26
+console.log("hello world".replaceAll(" ","-"));
+
+// Task27
+let k="madam";
+console.log(k===k.split("").reverse().join(""));
+
+// Task28
+console.log("JavaScript".slice(0,5));
+
+// Task29
+console.log(" hello   world ".trim().replace(/\s+/g," "));
+
+// Task30
+console.log("hello".indexOf("e"));
+
+// Task31
+let arra=[1,2];
+arra.push(3);
+console.log(arra);
+
+// Task32
+arra.shift();
+console.log(arra);
+
+// Task33
+console.log(arra.length);
+
+// Task34
+console.log(arra.includes(2));
+
+// Task35
+arra.sort((a,b)=>a-b);
+console.log(arra);
+
+// Task36
+arra.reverse();
+console.log(arra);
+
+// Task37
+console.log(arr.reduce((a,b)=>a+b,0));
+
+// Task38
+console.log(Math.min(...arra));
+
+// Task39
+let t=[1,2], u=[3,4];
+console.log(t.concat(u));
+
+// Task40
+let arrai=[1,2,2,3];
+console.log([...new Set(arrai)]);
+
+// Task41
+localStorage.setItem("username","admin");
+
+// Task42
+console.log(localStorage.getItem("username"));
+
+// Task43
+localStorage.removeItem("username");
+
+// Task44
+sessionStorage.clear();
+
+// Task45
+localStorage.setItem("arr",JSON.stringify([1,2,3]));
+
+
+// Task46
+JSON.stringify({name:"John"});
+
+
+// Task47
+JSON.parse('{"name":"John"}');
+
+
+// Task48
+let obj={name:"John",age:20};
+console.log(obj.age);
+
+// Task49
+try{
+  let a=10,b=0;
+  if(b===0) throw "Cannot divide by zero";
+  console.log(a/b);
+}catch(e){ console.log(e); }
+
+// Task50
+function checkInput(val){
+  if(!val) throw "Input is empty";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
