@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+    // Task21
+let y="Hello";
+console.log(y.length);
+
+// Task22
+console.log("hello".toUpperCase());
+
+// Task23
+console.log("I love JavaScript".includes("JavaScript"));
+
+// Task24
+console.log("hello".split("").reverse().join(""));
+
+
+// Task25
+let l="hello",count=0;
+for(let c of l) if("aeiou".includes(c)) count++;
+console.log(count);
+
+
+// Task26
+console.log("hello world".replaceAll(" ","-"));
+
+// Task27
+let k="madam";
+console.log(k===k.split("").reverse().join(""));
+
+// Task28
+console.log("JavaScript".slice(0,5));
+
+// Task29
+console.log(" hello   world ".trim().replace(/\s+/g," "));
+
+// Task30
+console.log("hello".indexOf("e"));
+
+        // Task31
+let arra=[1,2];
+arra.push(3);
+console.log(arra);
+
+// Task32
+arra.shift();
+console.log(arra);
+
+// Task33
+console.log(arra.length);
+
+// Task34
+console.log(arra.includes(2));
+
+// Task35
+arra.sort((a,b)=>a-b);
+console.log(arra);
+
+// Task36
+arra.reverse();
+console.log(arra);
+
+// Task37
+console.log(arra.reduce((a,b)=>a+b,0));
+
+// Task38
+console.log(Math.min(...arra));
+
+// Task39
+let t=[1,2], u=[3,4];
+console.log(t.concat(u));
+
+// Task40
+let arrai=[1,2,2,3];
+console.log([...new Set(arrai)]);
+
+// Task41
+localStorage.setItem("username","admin");
+
+// Task42
+console.log(localStorage.getItem("username"));
+
+// Task43
+localStorage.removeItem("username");
+
+// Task44
+sessionStorage.clear();
+
+// Task45
+localStorage.setItem("arr",JSON.stringify([1,2,3]));
+
+
+// Task46
+JSON.stringify({name:"John"});
+
+
+// Task47
+JSON.parse('{"name":"John"}');
+
+
+// Task48
+let obj={name:"John",age:20};
+console.log(obj.age);
+
+// Task49
+try{
+  let a=10,b=0;
+  if(b===0) throw "Cannot divide by zero";
+  console.log(a/b);
+}catch(e){ console.log(e); }
+
+// Task50
+function checkInput(val){
+  if(!val) throw "Input is empty";
+}
+    </script>
+</body>
+</html>
